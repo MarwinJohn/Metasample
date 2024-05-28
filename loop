@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LoopTest {
+    uint256 public simpleSum;
+    uint256 public complexSum;
+
+    // Simple operation: Add numbers from 1 to 1000
+    function simpleLoop() public {
+        simpleSum = 0;
+        for (uint256 i = 1; i <= 1000; i++) {
+            simpleSum += i;
+        }
+    }
+
+    // Complex operation: Calculate the sum of squares from 1 to 100
+    function complexLoop() public {
+        complexSum = 0;
+        for (uint256 i = 1; i <= 100; i++) {
+            complexSum += i * i;
+        }
+    }
+}
