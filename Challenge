@@ -1,0 +1,29 @@
+class IfElse {
+    // Function simulating the foo function from Solidity
+    foo(x) {
+        if (x < 10) {
+            return 0;
+        } else if (x < 20) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+
+    // Function simulating the ternary function from Solidity
+    ternary(_x) {
+        // Shorthand way to write if / else statement
+        // the "?" operator is called the ternary operator
+        return _x < 10 ? 1 : 2;
+    }
+}
+
+// Example usage
+const ifElse = new IfElse();
+
+console.log(ifElse.foo(5));  // Output: 0
+console.log(ifElse.foo(15)); // Output: 1
+console.log(ifElse.foo(25)); // Output: 2
+
+console.log(ifElse.ternary(5));  // Output: 1
+console.log(ifElse.ternary(15)); // Output: 2
